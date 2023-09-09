@@ -96,6 +96,15 @@
 	</p>
 	<Code @name="docs/surrealql/statements/relate/content.surql" />
 
+	<h4>Creating a single relation with the <code>ONLY</code> keyword</h4>
+	<p>
+		Using the ONLY keyword, just an object for the relation in question will be returned.
+		This, instead of an array with a single object.
+	</p>
+	<Code @name="docs/surrealql/statements/relate/only.surql" />
+
+
+
 	<h4>Basics of querying graphs</h4>
 	<p>Let's look at how the above gets queried, for more examples see the
 		<Link @link="docs.surrealql.statements.select"><code>SELECT</code>docs</Link>.
@@ -124,9 +133,6 @@
 		<Link @link="docs.surrealql.statements.let">parameters</Link> to specify the record IDs.
 	</p>
 	<Code @name="docs/surrealql/statements/relate/parameters.surql" />
-	<blockquote yellow text="Note"> Currently, you are unable to assign a variable to the edge table within a RELATE expression, so assigning <code>$edge</code> to <code>wrote</code> in the
-	example above will throw an error.
-	</blockquote>
 
 	<h4>Using the <code>RETURN</code> clause</h4>
 	<p>By default, the relate statement returns the record value once the changes have been made. To change the return
